@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+
+        <IsPackable>false</IsPackable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="FluentResults" Version="3.3.0" />
+        <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="5.0.13" />
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.9.4" />
+        <PackageReference Include="Moq" Version="4.16.1" />
+        <PackageReference Include="NUnit" Version="3.13.1" />
+        <PackageReference Include="NUnit3TestAdapter" Version="3.17.0" />
+        <PackageReference Include="coverlet.collector" Version="3.0.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\VoucherCheckMicroService\Beis.HelpToGrow.Voucher.Api.Check.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="Beis.Htg.VendorSme.Database">
+        <HintPath>..\VoucherCheckMicroService\library\Beis.Htg.VendorSme.Database.dll</HintPath>
+      </Reference>
+      <Reference Include="Beis.Htg.VendorSme.Database, Version=1.1.2.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>..\VoucherCheckMicroService\library\Beis.Htg.VendorSme.Database.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+</Project>
